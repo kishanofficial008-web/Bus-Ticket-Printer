@@ -1,0 +1,190 @@
+/* ---------- General ---------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    background:linear-gradient(90deg,#1565c0,#42a5f5);
+    color:white;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:34px;
+}
+
+header p{
+    margin-top:8px;
+    font-size:16px;
+}
+
+/* ---------- Form Container ---------- */
+
+.container{
+    width:500px;
+    max-width:90%;
+    margin:35px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+}
+
+.container h2{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:20px;
+}
+
+/* ---------- Labels ---------- */
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+}
+
+/* ---------- Inputs ---------- */
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border:1px solid #bbb;
+    border-radius:6px;
+    font-size:15px;
+}
+
+/* ---------- Buttons ---------- */
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:25px;
+}
+
+.buttons button{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* Generate Button */
+
+.buttons button:first-child{
+    background:#1565c0;
+    color:white;
+}
+
+.buttons button:first-child:hover{
+    background:#0d47a1;
+}
+
+/* Reset Button */
+
+.buttons button:last-child{
+    background:#e53935;
+    color:white;
+}
+
+.buttons button:last-child:hover{
+    background:#c62828;
+}
+
+/* ---------- Ticket ---------- */
+
+.ticket{
+    width:500px;
+    max-width:90%;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.15);
+
+    display:none;
+}
+
+.ticket h2{
+    text-align:center;
+    color:#1565c0;
+    margin-bottom:15px;
+}
+
+.ticket p{
+    margin:12px 0;
+    font-size:17px;
+}
+
+.ticket h3{
+    text-align:center;
+    color:green;
+    margin-top:15px;
+}
+
+.ticket button{
+    width:100%;
+    margin-top:20px;
+    padding:12px;
+    background:#2e7d32;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.ticket button:hover{
+    background:#1b5e20;
+}
+
+/* ---------- Footer (Optional) ---------- */
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#555;
+    margin-top:30px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:600px){
+
+header h1{
+    font-size:28px;
+}
+
+.container,
+.ticket{
+    width:95%;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.buttons button{
+    width:100%;
+    margin-top:10px;
+}
+
+}

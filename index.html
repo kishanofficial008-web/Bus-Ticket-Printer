@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <h1>🚌 Bus Ticket Booking System</h1>
+        <p>Simple Online Ticket Booking Portal</p>
+    </header>
+
+
+    <!-- Booking Form -->
+
+    <div class="container">
+
+        <h2>Book Your Ticket</h2>
+
+        <form id="ticketForm">
+
+            <label>Passenger Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+
+
+            <label>From</label>
+            <select id="from" required>
+
+                <option value="">Select City</option>
+                <option>Ahmedabad</option>
+                <option>Vadodara</option>
+                <option>Surat</option>
+                <option>Rajkot</option>
+                <option>Bhavnagar</option>
+
+            </select>
+
+
+            <label>To</label>
+            <select id="to" required>
+
+                <option value="">Select City</option>
+                <option>Ahmedabad</option>
+                <option>Vadodara</option>
+                <option>Surat</option>
+                <option>Rajkot</option>
+                <option>Bhavnagar</option>
+
+            </select>
+
+
+            <label>Journey Date</label>
+            <input type="date" id="date" required>
+
+
+            <label>Adult Tickets (₹100 each)</label>
+            <input type="number" id="adult" value="0" min="0">
+
+
+            <label>Minor Tickets (₹50 each)</label>
+            <input type="number" id="minor" value="0" min="0">
+
+
+            <div class="buttons">
+
+                <button type="button" onclick="generateTicket()">
+                    Generate Ticket
+                </button>
+
+                <button type="reset">
+                    Reset
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- Ticket -->
+
+    <div class="ticket" id="ticket">
+
+        <h2>🚌 Bus Ticket</h2>
+
+        <hr>
+
+        <p><strong>Passenger :</strong>
+            <span id="tname"></span>
+        </p>
+
+        <p><strong>From :</strong>
+            <span id="tfrom"></span>
+        </p>
+
+        <p><strong>To :</strong>
+            <span id="tto"></span>
+        </p>
+
+        <p><strong>Journey Date :</strong>
+            <span id="tdate"></span>
+        </p>
+
+        <p><strong>Adult Tickets :</strong>
+            <span id="tadult"></span>
+        </p>
+
+        <p><strong>Minor Tickets :</strong>
+            <span id="tminor"></span>
+        </p>
+
+        <p><strong>Total Cost :</strong>
+            ₹ <span id="ttotal"></span>
+        </p>
+
+        <hr>
+
+        <h3>🙏 Thank You!</h3>
+
+        <p>
+            Have a Safe and Happy Journey.
+        </p>
+
+        <button onclick="window.print()">
+            Print Ticket
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
